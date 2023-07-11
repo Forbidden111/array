@@ -2,46 +2,75 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("task1");
-        double[] array = new double[]{1.57, 7.654, 9.986};
-        double array1 = array[1];
-        System.out.println(array[0]);
-
-
-        // task2
-        System.out.println("task2");
-        for (int i = 0; i < array.length - 1; i++) {
-            System.out.print(array[i]);
-            if (i < array.length - 1) {
-
-                System.out.print(",");
-                System.out.println();
+//        задание 1
+        int[] arrays = new int[]{1, 2, 3};
+        double[] array = {1.57, 7.654, 9.986};
+        char[] arrak = {'a', 'b', 'c'};
+//             задание 2
+        for (int i = 0; i < arrays.length; i++) {
+            if (i != arrays.length - 1) {
+                System.out.print(arrays[i] + ", ");
+            } else {
+                System.out.print(arrays[i] + " \n");
             }
+
         }
-        //task3
-        System.out.println("task3");
-        for (int i = array.length - 1; i > 0; i--) {
-            System.out.print(array[i] + ",");
-
-            System.out.print(array[i]);
-            System.out.println();
-        }
-
-
-        System.out.println("задача 4");
-        int[] weight = {1, 2, 3};
-        for (
-                int i = 0;
-                i < weight.length; i++) {
-            if (weight[i] % 2 != 0) {
-                weight[i]++;
-                System.out.println(weight[i]);
-                System.out.println();
-
-
+        for (int i = 0; i < array.length; i++) {
+            if (i != array.length - 1) {
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.print(array[i] + " \n");
             }
+
         }
+        for (int i = 0; i < arrak.length; i++) {
+            if (i != arrak.length - 1) {
+                System.out.print(arrak[i] + ", ");
+            } else {
+                System.out.print(arrak[i] + " \n");
+            }
+
+        }
+//        задание 3
+        for (int i = arrays.length - 1; i >= 0; i--) {
+            if (i != 0 ) {
+                System.out.print(arrays[i] + ", ");
+            } else {
+                System.out.print(arrays[i] + " \n");
+            }
+
+        }
+        for (int i = array.length -1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.print(array[i] + " \n");
+            }
+
+        }
+        for (int i = arrak.length -1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(arrak[i] + ", ");
+            } else {
+                System.out.print(arrak[i] + " \n");
+            }
+
+        }
+//        задание4
+        for (int i = 0 ; i < arrays.length ; i++) {
+            if (arrays[i] % 2 != 0)arrays[i]++;
+
+            
+        }
+        System.out.println(Arrays.toString(arrays));
+
+
+
     }
+
 }
+
+
+
+
 
